@@ -1,0 +1,20 @@
+{
+  "name": "typescript-express-base",
+  "version": "1.0.0",
+  "description": "Typescript Express application",
+  "main": "index.ts",
+  "author": "Jefferson Estevam",
+  "scripts" : {
+    "dev" : "nodemon ./index.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.5.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2"
+  }
+}
