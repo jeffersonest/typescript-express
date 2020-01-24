@@ -4,17 +4,26 @@
   "description": "Typescript Express application",
   "main": "index.ts",
   "author": "Jefferson Estevam",
-  "scripts" : {
-    "dev" : "nodemon ./index.ts"
+  "scripts": {
+    "dev": "nodemon ./index.ts"
   },
   "license": "MIT",
   "dependencies": {
-    "typescript": "^3.7.5"
+    "@types/cors": "^2.8.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.7.5",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
-    "@types/express": "^4.17.2",
+    "@types/express": "^4.16.1",
     "@types/node": "^13.5.0",
     "nodemon": "^2.0.2",
-    "ts-node": "^8.6.2"
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
   }
 }

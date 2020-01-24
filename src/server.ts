@@ -1,13 +1,27 @@
-class Server {
-    protected port: number
+import express from 'express'
+import cors from 'cors'
 
-    constructor(_port: number) {
-        this.port = _port 
-    }
+class App {
+  public express: express.Application
 
-    getPort(): number {
-        return this.port
-    }
+  public constructor () {
+    this.express = express()
+
+    this.middlewares()
+    this.database()
+    this.routes()
+  }
+
+  private middlewares (): void {
+    this.express.use(express.json())
+    this.express.use(cors())
+  }
+
+  private database (): void {
+  }
+
+  private routes (): void {
+  }
 }
 
-export default Server
+export default new App().express
