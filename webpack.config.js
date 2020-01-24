@@ -19,7 +19,7 @@ module.exports = {
     extensions: [ '.tsx', '.ts', '.js' ],
   },
   output: {
-    filename: 'server.js',
+    filename: 'server.min.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
